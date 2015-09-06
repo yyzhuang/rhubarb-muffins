@@ -34,7 +34,7 @@ $^\ddagger$~University of Victoria, Victoria, BC, Canada}
 The distribution of random distances in geometric figures has important
 applications in probability, statistics and many applied fields.
 The study of the distribution of random distances in rhombuses is presented in this work.
-Results are derived using an approach that is easier than those previous employed in the literature.
+Results are derived using an approach that is easier than those employed in the literature.
 Explicit probability density functions are presented which are useful in a wide range of applications
 such as operations research, road construction, and cellular signal transmission analysis.
 \end{abstract}
@@ -127,9 +127,9 @@ F_Z(z)&=& {\rm P}\big(Z \leq z \big) = {\rm P}\big(X^2+Y^2 \leq z \big)\nonumber
 \iint_{\Omega_{\rm circle}}f_X(x)f_Y(y){\rm d}x{\rm d}y
 \end{eqnarray}
 where $\Omega_{\rm circle}=\left\{(X,Y)|X^2+Y^2\leq z, -a \leq X \leq a, -b \leq Y \leq b\right\}$
-is the region of concentric circles of radius $\sqrt{z}$ satisfying $X^2+Y^2\leq z$
+is the region of concentric circles of radius $\sqrt{z}$ satisfying $X^2+Y^2\leq z$, 
 %(as the value of $z$ varies)
-with joint pdf $f_X(x)f_Y(y)$ when neither $f_X(x)$ and $f_Y(y)$ is zero.
+with joint pdf $f_{X, Y}(x, y)=f_X(x)f_Y(y)$ when $f_X(x)\neq 0$ and $f_Y(y)\neq 0$.
 For example, $\Omega_{\rm circle}$ is shown in Figure~\ref{fig:square} for
 $a=b=1$ and $f_X(x)$ and $f_Y(y)$ given in (\ref{eq:fxy}).
 %with $0\leq z \leq1$ and $1\leq z \leq 2$.
@@ -138,7 +138,7 @@ $a=b=1$ and $f_X(x)$ and $f_Y(y)$ given in (\ref{eq:fxy}).
 %$f_X(x)f_Y(y)$ are non-zero.
 The last equality in (\ref{eq-rec}) holds because the random variables
 $X$ and $Y$ are independent in a rectangle.
-Note that $X$ and $Y$ in (\ref{eq-rec}) correspond to the \textit{difference of the coordinates} of random points.
+Note that $X$ and $Y$ in (\ref{eq-rec}) correspond to the \textit{difference of the coordinates} of random points,
 rather than the actual coordinates.
 %
 %Note that the region $\Omega_{X^2+Y^2 \leq z}$ is critical. It expresses the
@@ -271,7 +271,7 @@ x_{\rm H}, y_{\rm L}\leq Y \leq y_{\rm H}\right\}$ is the region of concentric e
 satisfying $X^2+XY+Y^2\leq z$
 with semi-major axis of $\sqrt{2z}$ and semi-minor axis of $\sqrt{\frac{2z}{3}}$;
 %(as the value of $z$ varies)
-with joint pdf $f_X(x)f_Y(y)$, and $x_{\rm L} \leq X \leq x_{\rm H}, y_{\rm L}\leq
+with joint pdf $f_{X, Y}(x, y)=f_X(x)f_Y(y)$, and $x_{\rm L} \leq X \leq x_{\rm H}, y_{\rm L}\leq
 Y \leq y_{\rm H}$ is the region where neither $f_X(x)$ and $f_Y(y)$ is zero.
 For example, $\Omega_{\rm ellipse}$ for the rhombus in Figure~\ref{fig:rhombus}
 is shown in Figure~\ref{fig:z1}, where $x_{\rm L}=y_{\rm L}=-1, x_{\rm H}=y_{\rm H}=1$
@@ -304,7 +304,7 @@ d}y+\iint_{\Omega_2}(1-x)(1+y){\rm d}x{\rm d}y\right],
 where $\Omega_1$ is the portion of $\Omega_{\rm ellipse}$ in the first quadrant with
 %is the interior of ellipse $X^2+XY+Y^2 \leq z$ with
 $0 \leq X\leq 1$ and $0 \leq Y \leq 1$, and $\Omega_2$ is the portion of
-$\Omega_{\rm ellipse}$ in the fourth quadrant when
+$\Omega_{\rm ellipse}$ in the fourth quadrant with
 %is the interior of this ellipse with
 $0 \leq X \leq 1$ and $-1 \leq Y \leq 0$.
 For example, consider Figure~\ref{fig:z1} with $0\leq z \leq \frac{3}{4}$ ($0\leq d\leq\frac{\sqrt{3}}{2}$).
@@ -601,7 +601,7 @@ is the region of concentric ellipses satisfying $X^2+XY+Y^2 \leq z$ with $-2 \le
 Note that these concentric ellipses are
 the same as those in Figure~\ref{fig:z1}, and only the non-zero
 region of $f_X(x)f_Y(y)$, as indicated in (\ref{eq:fxy_diag2}),
-is different
+is different.
 %The ellipse $X^2+XY+Y^2 \leq z$ is shown in Figure~\ref{fig:diag2}.
 As the ellipse is symmetric with respect to $Y=-X$, the distribution of $Z$ is
 \begin{equation}
